@@ -1,17 +1,20 @@
-const path = require('path');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+const resolve = (dir) => path.resolve(__dirname, dir);
 
 module.exports = {
-  mode: 'production',
-  entry: './index.js',
+  mode: "production",
+  entry: resolve("src/index.js"),
   devtool: false,
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'index.js'
+    path: resolve("dist"),
+    filename: "index.js",
   },
   devServer: {
-    static: path.resolve(__dirname, 'public'),
-    port: 8080,
-    open: true
+    static: resolve("public"),
+    port: 9000,
+    open: true,
   },
   module: {
     rules: [
@@ -19,9 +22,14 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
-      }
-    ]
-  }
-}
+          loader: "babel-loader",
+        },
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: resolve("public/index.html"),
+    }),
+  ],
+};
