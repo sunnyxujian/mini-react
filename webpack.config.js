@@ -5,7 +5,7 @@ const resolve = (dir) => path.resolve(__dirname, dir);
 
 module.exports = {
   mode: "production",
-  entry: resolve("src/index.js"),
+  entry: resolve("main.js"),
   devtool: false,
   output: {
     path: resolve("dist"),
@@ -13,7 +13,7 @@ module.exports = {
   },
   devServer: {
     static: resolve("public"),
-    port: 9000,
+    port: 3000,
     open: true,
   },
   module: {

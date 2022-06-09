@@ -4,7 +4,6 @@ specifiers:
   '@babel/core': ^7.16.0
   '@babel/plugin-transform-react-jsx': ^7.17.12
   babel-loader: ^8.2.3
-  cross-env: ^7.0.3
   html-webpack-plugin: ^5.5.0
   webpack: ^5.63.0
   webpack-cli: ^4.9.1
@@ -14,7 +13,6 @@ devDependencies:
   '@babel/core': 7.18.2
   '@babel/plugin-transform-react-jsx': 7.17.12_@babel+core@7.18.2
   babel-loader: 8.2.5_b691d163cf7cf2d6fe2c056467b6e090
-  cross-env: 7.0.3
   html-webpack-plugin: 5.5.0_webpack@5.72.1
   webpack: 5.72.1_webpack-cli@4.9.2
   webpack-cli: 4.9.2_158fede7a4a6cac230ff2acad2bc4fff
@@ -927,14 +925,6 @@ packages:
 
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
-    dev: true
-
-  /cross-env/7.0.3:
-    resolution: {integrity: sha512-+/HKd6EgcQCJGh2PSjZuUitQBQynKor4wrFbRg4DtAgS1aWO+gU52xpH7M9ScGgXSYmAVS9bIJ8EzuaGw0oNAw==}
-    engines: {node: '>=10.14', npm: '>=6', yarn: '>=1'}
-    hasBin: true
-    dependencies:
-      cross-spawn: 7.0.3
     dev: true
 
   /cross-spawn/7.0.3:

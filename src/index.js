@@ -1,5 +1,5 @@
-import { h } from "./h";
+import { createElement } from "./jsx";
 
-const jsxELe = <h1>hello world!</h1>;
-
-console.log(jsxELe);
+export default {
+  createElement,
+};
