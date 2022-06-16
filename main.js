@@ -1,4 +1,5 @@
 import React from "./src/index";
+import ReactDOM from "./src/react-dom"
 
 const jsxELe = (
   <h1 className="title" style={{ color: "red" }}>
@@ -9,4 +10,4 @@ const jsxELe = (
   </h1>
 );
 
-console.log("jsxELe=>", jsxELe);
+ReactDOM.render(jsxELe, document.getElementById('root'))
